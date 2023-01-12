@@ -67,15 +67,11 @@ a:hover{
 
 #chatroom{
 	position: absolute;
-    width: 20vw;
-    height: 40vh;
-	right: 7vw;
-	top: 27vh;
-	border-inline: 4px dotted green;
-	background-color: #FFFFFF;
-	border-radius: 30px;
-	text-align: center;
-	opacity: 70%;
+    width: 33vw;
+    height: 70.2vh;
+	right: 2vw;
+	top: 13vh;
+	border: 0
 }
 
 #banner{
