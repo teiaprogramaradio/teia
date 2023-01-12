@@ -64,6 +64,20 @@ a:hover{
 #containerI{
     background-color: #cfcfcf;
 }
+
+#chatroom{
+	position: absolute;
+    width: 20vw;
+    height: 40vh;
+	right: 7vw;
+	top: 27vh;
+	border-inline: 4px dotted green;
+	background-color: #FFFFFF;
+	border-radius: 30px;
+	text-align: center;
+	opacity: 70%;
+}
+
 #banner{
     width: 100vw;
     height: 4vh;
@@ -75,7 +89,7 @@ a:hover{
 #center{
     width: 100vw;
     height: 91vh;
-    margin-top: 4vh;
+    margin-top: 0vh;
     background-image: url(images/teiabg.png);
     background-position: center;
     background-size: 100% 100%;
@@ -86,8 +100,8 @@ a:hover{
 }
 #center2{
     width: 100vw;
-    height: 91vh;
-    margin-top: 4vh;
+    height: 97vh;
+    margin-top: 0vh;
     background-image: url(images/teiabg.png);
     background-position: center;
     background-size: 100% 100%;
@@ -154,10 +168,12 @@ a:hover{
     -ms-user-select: none;
 }
 #paranho1{
+	top: 0;
     left: 0;
     width: 9vw;
 }
 #paranho2{
+	top: 0;
     right: 0;
     width: 7vw;
 }
@@ -220,7 +236,7 @@ a:hover{
 #container3{
     width: 99vw;
     height: 89vh;
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-left: 1.5vw;
     background-color: rgba(113, 113, 113, 0.33);
     display: flex;
@@ -274,12 +290,11 @@ a:hover{
     margin-top: 8vh;
 }
 .teia_text{
-    width: 50vw;
+    width: 55vw;
     display: flex;
     
     align-items: center;
     flex-direction: column;
-    overflow-y: scroll;
     text-align: center;
     
 }
