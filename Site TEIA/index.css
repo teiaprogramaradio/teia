@@ -1,4 +1,3 @@
-/* FONTS */
 @font-face{
     font-family: 'NHaasGrotesk-Roman';
     src: url('fonts/NHaasGrotesk-Roman.woff') format('woff');
@@ -17,18 +16,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
-
-
-
-body{
-    margin: 0;
-    font-family:'NHaasGrotesk-Roman';
-    font-size: 2.8vh;
-    cursor: url('images/mouse.png'), auto!important;	
-    
-}
 a{
     text-decoration: none;
     color: black;
@@ -38,66 +25,40 @@ a:hover{
     text-decoration: underline;
     color: black;
     cursor: url('images/mouse.png'), auto;	
+    
 }
-
-
-
-#container, #containerT, #containerA, #containerZ, #containerI{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'NHaasGrotesk-Roman';
+    font-size: 2.8vh;
+    cursor: url('images/mouse.png'), auto!important;
 }
-#container{
-    background-image:linear-gradient( rgba(250, 250, 250, 1), #facb21);
-}
-#containerT{
-    background-image:linear-gradient( rgba(250, 250, 250, 1), #29a74b);
-}
-#containerA{
-    background-image:linear-gradient( rgba(250, 250, 250, 1), #c23333);
-}
-#containerZ{
-    background-image:linear-gradient( rgba(250, 250, 250, 1), #3e54a0);
-}
-#containerI{
-    background-color: #cfcfcf;
-}
-
-#chatroom{
-	position: absolute;
-    width: 33vw;
-    height: 70.2vh;
-	right: 2vw;
-	top: 13vh;
-	border: 0
-}
-
 #banner{
     width: 100vw;
-    height: 4vh;
+    height: 5vh;
     background-color: #ad64ff;
     top: 0;
     position: fixed;
 }
-
+#banner p{
+    text-align: center;
+    position: relative;
+    top: 1vh;
+    margin: auto;
+}
 #center{
     width: 100vw;
-    height: 91vh;
-    margin-top: 0vh;
+    height: 95vh;
+    margin-top: 5vh;
     background-image: url(images/teiabg.png);
     background-position: center;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #center2{
     width: 100vw;
     height: 97vh;
-    margin-top: 0vh;
+    margin-top: 5vh;
     background-image: url(images/teiabg.png);
     background-position: center;
     background-size: 100% 100%;
@@ -108,75 +69,54 @@ a:hover{
     flex-direction: column;
     overflow-y: scroll;
     text-align: center;
-    
 }
-#menu_buttons{
+#bgradient1, #bgradient2, #bgradient3, #bgradient4{
+    height: 100vh;
     width: 100vw;
-    height: 5vh;
-    background-color: #ffffff;
-    bottom: 0;
-    position: fixed;
     display: flex;
     flex-direction: row;
-    cursor: url('images/mouse.png'), auto;	
-    font-size: 2.2vh;
-    z-index: 100;
+    position: fixed;
 }
-
-
-.menu_logo{
-    width: 5%;
-/*    border-style: solid;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: url('images/mouse.png'), auto;	
+#bgradient1{
+    background-image:linear-gradient( rgba(250, 250, 250, 1), #facb21);
 }
-.logo{
-    
-    height: 4vh;
-    mix-blend-mode: multiply;
+#bgradient2{
+    background-image:linear-gradient( rgba(250, 250, 250, 1), #29a74b);
 }
-.menu_buttons{
-    width: 23.75%;
-/*    border-style: solid;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: url('images/mouse.png'), auto;	
+#bgradient3{
+    background-image:linear-gradient( rgba(250, 250, 250, 1), #c23333);
 }
-.menu_buttons:hover{
-    text-decoration: underline;
-    color: black;
+#bgradient4{
+    background-image:linear-gradient( rgba(250, 250, 250, 1), #8f9fda);
+}
+#bgradient5{
+    background-color: #cfcfcf;
+}
+#chatroom{
+	position: absolute;
+    width: 33vw;
+    height: 70.2vh;
+	right: 2vw;
+	top: 13vh;
+	border: 0
 }
 #paranho1, #paranho2{
     position: fixed;
-    top: 4vh;
+    top: 5vh;
     opacity: 0.7;
-    display: block;
     transition: 1s;
-    mix-blend-mode: multiply;
-    user-drag: none;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 #paranho1{
-	top: 0;
     left: 0;
     width: 9vw;
 }
 #paranho2{
-	top: 0;
     right: 0;
     width: 7vw;
 }
 #paranho1:hover, #paranho2:hover{
-    opacity: 0;
+    opacity:0;
 }
-
 .images{
     display: flex;
     justify-content: center;
@@ -186,73 +126,50 @@ a:hover{
 }
 #img_teia, #img_transmissao, #img_arquivo, #img_zine, #img_sobre{
     position: absolute;
-/*    box-shadow: -15px 15px 25px rgba(0, 0, 0, 0.1);*/
+    width: 35vw;
 }
 #img_teia{
-    width: 35vw;
-    z-index: 10;
+    width: 22vw;
+    z-index: 9;
+    left: 35vw;
+    top: 22vh;
     -ms-transform: skewX(40deg) rotate(-5deg);
     transform: skewX(40deg) rotate(-5deg);
     box-shadow: -15px 15px 25px rgba(0, 0, 0, 0.1);
 }
 #img_transmissao{
     width: 25vw;
-    z-index: 9;
-    left: 18vw;
-    top: 25vh;
+    z-index: 8;
+    left: 38vw;
+    top: 35vh;
     -ms-transform: skewX(-15deg) rotate(-15deg);
     transform: skewX(-15deg) rotate(-15deg);
 }
 #img_arquivo{
     width: 30vw;
-    z-index: 8;
+    z-index: 7;
     left: 42vw;
     top: 20vh;
     -ms-transform: skewX(-20deg) rotate(5deg);
     transform: skewX(-20deg) rotate(5deg);
 }
 #img_zine{
-    width: 30vw;
-    z-index: 7;
+    width: 20vw;
+    z-index: 6;
     left: 32vw;
-    top: 38vh;
+    top: 28vh;
     -ms-transform: skewX(-20deg) rotate(5deg);
     transform: skewX(-20deg) rotate(5deg);
 }
-
 #img_sobre{
     width: 25vw;
-    z-index: 6;
-    left: 58vw;
-    top: 42vh;
+    z-index: 5;
+    left: 43vw;
+    top: 40vh;
     -ms-transform: skewX(15deg) rotate(15deg);
     transform: skewX(15deg) rotate(15deg);
 }
-/*
-#container3{
-    width: 99vw;
-    height: 89vh;
-    margin-top: 1vh;
-    margin-left: 1.5vw;
-    background-color: rgba(113, 113, 113, 0.33);
-    display: flex;
-    margin-top: 4vh;
-}
-*/
-#issue_image{
-    width: 20vw;
-    height: 0vh;
-    padding-bottom: 20%;
-    margin-right: 0vw;
-    margin-left: 2.5vw;
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    
-    -ms-transform: skewX(-3deg) rotate(5deg);
-    transform: skewX(-3deg) rotate(5deg);
-}
-.archive_list{
+#archive_list{
     margin-bottom: 0;
 }
 #archive{
@@ -269,7 +186,15 @@ a:hover{
     cursor: url('images/mouse.png'), auto;
     transform: translate3d(0,0,0);
 }
-#zine_images{
+#teia_text{
+    width: 55vw;
+    position: absolute;
+    left: 23vw;
+    top: 7vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 #zine_img1{
     position: relative;
@@ -283,16 +208,43 @@ a:hover{
     margin-bottom: 10vh;
 }
 .zine_text p{
-    margin-top: 8vh;
+    margin-top: 2vh;
 }
-.teia_text{
-    width: 55vw;
+#menu_buttons{
+    width: 100vw;
+    height: 5vh;
+    background-color: #ffffff;
+    bottom: 0;
+    position: fixed;
     display: flex;
-    
+    flex-direction: row;
+    cursor: url('images/mouse.png'), auto;	
+    font-size: 2.2vh;
+    z-index: 100;
+}
+.menu_logo{
+    width: 5%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
+    cursor: url('images/mouse.png'), auto;	
+}
+.logo{
     
+    height: 4vh;
+    margin-top: 5px;
+    mix-blend-mode: multiply;
+}
+.menu_buttons{
+    width: 23.75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url('images/mouse.png'), auto;	
+}
+.menu_buttons:hover{
+    text-decoration: underline;
+    color: black;
 }
 
 .hyperlinks{
@@ -300,13 +252,18 @@ a:hover{
     text-decoration: none;
     cursor: url('images/mouse.png'), auto;	
 }
-
 .hyperlinks:hover{
     color: black;
     text-decoration: underline;
 }
-
-
+.stream{
+    border: 0;
+    position: absolute;
+    top: 13vh;
+    left: 3vw;
+    height: 70%;
+    width: 60%;
+}
 
 /*---------------mobile----------------*/
 @media only screen and (max-width: 1000px)   {
@@ -314,10 +271,6 @@ a:hover{
         background-color: #ad64ff;
         font-size: 2.5vh;
     
-    }
-    
-    #container{
-/*        background-image:linear-gradient( rgba(250, 250, 250, 1), #8d21fa);*/
     }
     
     
@@ -328,9 +281,7 @@ a:hover{
     .menu_logo{
         margin-left: 3vw;
     }
-    .menu_buttons{
-/*        display:none;*/
-    }
+
     #paranho1{
         width: 20vw;
     }
@@ -364,6 +315,10 @@ a:hover{
     left: 30vw;
     top: 57vh;
 }
+#chatroom{
+    display: none;
+}
+
     .archive_list{
     margin-bottom: 10vh;
 }
@@ -381,11 +336,12 @@ a:hover{
         width: 90vw;
     
     }
+    .stream{
+        height: 50%;
+        width: 93%;
+    }
 }
 /*---------------mobile----------------*/
 @media only screen and (max-width: 800px)   {
-    #container{
-/*        background-image:linear-gradient( rgba(250, 250, 250, 1), #21fa4b);*/
-    }
-    
+
 }
